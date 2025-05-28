@@ -1,0 +1,54 @@
+
+services:
+  server:
+    build: Backend/.
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    networks:
+      - local-network
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/backlog 
+    depends_on:
+      - mongo
+
+  client:
+    build: Frontend/.
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    networks:
+      - local-network
+
+  mongo:
+    image: mongo:latest
+    restart: unless-stopped
+    container_name: mongo
+    ports:
+      - "27017:27017"  # Porta standard per MongoDB
+    networks:
+      - local-network
+    volumes:
+      - ~/Documents/DataExtraction/mongo-data:/data/db  # Volume per persistenza dei dati
+      
+  mongo-express:
+    image: mongo-express:latest
+    restart: unless-stopped
+    container_name: mongo-express
+    ports:
+      - "8081:8081"  # Porta per l'interfaccia web di Mongo Express
+    networks:
+      - local-network
+    environment:
+      - ME_CONFIG_MONGODB_URL=mongodb://mongo:27017/backlog  # URL di connessione a MongoDB
+    depends_on:
+      - mongo  # Dipende dal servizio mongo
+
+
+
+networks:
+  local-network: {}
+
+volumes:
+  mongo-data:
+
