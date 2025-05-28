@@ -1,3 +1,6 @@
 [submodule "backend"]
 	path = Backend
 	url = https://github.com/AlessandroMarcellettiUnicam1/BlockchainDataExtraction
+[submodule "BlockchainProcessMining_frontend"]
+	path = Frontend
+	url = https://github.com/AlessandroMarcellettiUnicam1/BlockchainProcessMining_frontend
