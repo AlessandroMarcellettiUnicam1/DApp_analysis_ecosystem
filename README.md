@@ -31,7 +31,14 @@ docker compose up
 ```
 
 ## A brief explanation of the ecosystem is in the wiki 
+### Extraction and Query page
+[Extraction and query](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Extraction-and-Query)
 
+### Visualization page
+[Visualization page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Visualization-page)
+
+### Analysis page 
+[Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Analysis-page)
 
 
 
