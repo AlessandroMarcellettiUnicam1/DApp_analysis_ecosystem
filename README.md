@@ -30,6 +30,8 @@ Make sure that there is no `package-lock.json`
 docker compose up
 ```
 
+## A brief explanation of the ecosystem is in the wiki 
+
 
 
 
