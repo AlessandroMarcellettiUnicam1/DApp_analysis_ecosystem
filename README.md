@@ -45,9 +45,14 @@ docker compose up
 ```
 > [!NOTE]
 > ## How to test the application
+> ### Make sure you read the visualization page in the wiki first.
+> [Visualization page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Visualization-page)
+> 
 > To test the visualization page, use the test file located inside the repo.
 > 
 > `TestFile/testFile.json`
+>
+> 
 
 ## A brief explanation of the ecosystem is in the wiki 
 ### Extraction and Query page
