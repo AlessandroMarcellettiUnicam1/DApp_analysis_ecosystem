@@ -16,7 +16,7 @@ WEB3_ALCHEMY_MAINNET_URL=https://eth-mainnet.g.alchemy.com/v2/<alchemy_api>
 WEB3_ALCHEMY_SEPOLIA_URL=https://eth-sepolia.g.alchemy.com/v2/<alchemy_api>
 
 API_KEY_ETHERSCAN=<etherscan_api>
-ETHERSCAN_MAINNET_ENDPOINT=https://api.etherscan.io/api
+ETHERSCAN_MAINNET_ENDPOINT=https://api.etherscan.io/v2/api?chainid=1
 ETHERSCAN_SEPOLIA_ENDPOINT=https://api-sepolia.etherscan.io/api
 
 MONGODB_URL=<connection_string>
@@ -74,6 +74,7 @@ docker compose up
 
 ### Analysis page 
 [Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Analysis-page)
+
 
 
 
