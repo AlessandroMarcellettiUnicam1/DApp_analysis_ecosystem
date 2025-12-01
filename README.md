@@ -6,7 +6,7 @@
 To download all the repositories inside this repo
 
 ```
-git clone --recursive https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem.git
+git clone --recursive <repository_git_link>
 ```
 > [!IMPORTANT]
 >  ### Backend
@@ -74,6 +74,7 @@ docker compose up
 
 ### Analysis page 
 [Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Analysis-page)
+
 
 
 
