@@ -69,11 +69,12 @@ docker compose up
 ### Extraction and Query page
 [Extraction and query](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Extraction-and-Query)
 
-### Visualization page
+### Graph-based
 [Visualization page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Visualization-page)
 
-### Analysis page 
+### Dashboard 
 [Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Analysis-page)
+
 
 
 
