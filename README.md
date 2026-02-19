@@ -65,15 +65,16 @@ docker compose up
 >
 > 
 
-## A brief explanation of the ecosystem is in the wiki 
+## For a brief explanation of the framework refer to the wiki 
 ### Extraction and Query page
 [Extraction and query](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Extraction-and-Query)
 
 ### Graph-based
-[Graph page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Visualization-page)
+[Graph page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Graph-based)
 
 ### Dashboard 
-[Dashboard page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Analysis-page)
+[Dashboard page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Dashboard-page)
+
 
 
 
