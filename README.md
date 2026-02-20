@@ -68,7 +68,7 @@ docker compose up
 > ### Make sure you read the Analysis page in the wiki first.
 > [Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Dashboard-page)
 > 
-> To test the analysis page, upload the test file into the database from the upload button inside the filter 
+> To test the analysis page, upload the test file into the database from the "upload collection" button inside the filter 
 > 
 > `TestFile/testFile.json`
 >
@@ -83,6 +83,7 @@ docker compose up
 
 ### Dashboard 
 [Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Dashboard-page)
+
 
 
 
