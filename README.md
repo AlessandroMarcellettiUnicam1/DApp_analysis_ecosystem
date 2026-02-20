@@ -57,7 +57,7 @@ docker compose up
 > [!NOTE]
 > ## How to test the application
 > ### Make sure you read the visualization page in the wiki first.
-> [Visualization page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Visualization-page)
+> [Visualization page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Graph%E2%80%90based#visualization-page)
 > 
 > To test the visualization page, use the test file located inside the repo.
 > 
@@ -70,10 +70,11 @@ docker compose up
 [Extraction and query](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Extraction-and-Query)
 
 ### Graph-based
-[Graph page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Graph-based)
+[Graph page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Graph%E2%80%90based#visualization-page)
 
 ### Dashboard 
-[Dashboard page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Dashboard-page)
+[Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Dashboard-page)
+
 
 
 
