@@ -48,18 +48,27 @@ In this case, the Alchemy provider has been used; however, you are free to use a
 >
 > `Backend/package-lock.json`
 
-> [!Warning]
-> ### Remove the `package-lock.json` from:
+
 ## How to run the application
 ```
 docker compose up
 ```
 > [!NOTE]
-> ## How to test the application
+> ## How to test the graph-based visualization
 > ### Make sure you read the visualization page in the wiki first.
 > [Visualization page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Graph%E2%80%90based#visualization-page)
 > 
 > To test the visualization page, use the test file located inside the repo.
+> 
+> `TestFile/testFile.json`
+
+
+> [!NOTE]
+> ## How to test the Analysis page
+> ### Make sure you read the Analysis page in the wiki first.
+> [Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Dashboard-page)
+> 
+> To test the analysis page, upload the test file into the database from the upload button inside the filter 
 > 
 > `TestFile/testFile.json`
 >
@@ -74,6 +83,7 @@ docker compose up
 
 ### Dashboard 
 [Analysis page](https://github.com/AlessandroMarcellettiUnicam1/DApp_analysis_ecosystem/wiki/Dashboard-page)
+
 
 
 
