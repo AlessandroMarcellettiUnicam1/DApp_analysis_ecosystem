@@ -4,3 +4,6 @@
 [submodule "BlockchainProcessMining_frontend"]
 	path = Frontend
 	url = https://github.com/AlessandroMarcellettiUnicam1/BlockchainProcessMining_frontend
+[submodule "CoBlocklyBackend"]
+	path = CoBlocklyBackend
+	url = git@github.com:AlessandroMarcellettiUnicam1/CoBlocklyBackend.git

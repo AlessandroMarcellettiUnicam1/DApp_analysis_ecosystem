@@ -29,7 +29,7 @@ services:
     networks:
       - local-network
     volumes:
-      - ~/Documents/DataExtraction/mongo-data:/data/db  # Volume per persistenza dei dati
+      - mongo-data:/data/db  # Volume per persistenza dei dati cambiato in quello standard
       
   mongo-express:
     image: mongo-express:latest
