@@ -20,6 +20,14 @@ services:
     networks:
       - local-network
 
+  coblockly-backend:
+    build: CoBlocklyBackend/.
+    restart: unless-stopped
+    ports:
+      - "8001:8000" # Porta 8001 per non entrare in conflitto con il servizio server che utilizza 8000
+    networks:
+      - local-network
+
   mongo:
     image: mongo:latest
     restart: unless-stopped
@@ -43,8 +51,6 @@ services:
       - ME_CONFIG_MONGODB_URL=mongodb://mongo:27017/backlog  # URL di connessione a MongoDB
     depends_on:
       - mongo  # Dipende dal servizio mongo
-
-
 
 networks:
   local-network: {}
