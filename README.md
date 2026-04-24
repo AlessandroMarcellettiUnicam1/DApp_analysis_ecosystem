@@ -14,6 +14,7 @@ git clone --recursive <repository_git_link>
 ```
 WEB3_ALCHEMY_MAINNET_URL=https://eth-mainnet.g.alchemy.com/v2/<alchemy_api>
 WEB3_ALCHEMY_SEPOLIA_URL=https://eth-sepolia.g.alchemy.com/v2/<alchemy_api>
+WS_ALCHEMY_MAINNET_URL=wss://eth-mainnet.g.alchemy.com/v2/<alchemy_api>
 
 API_KEY_ETHERSCAN=<etherscan_api>
 ETHERSCAN_MAINNET_ENDPOINT=https://api.etherscan.io/v2/api?chainid=1
