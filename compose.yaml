@@ -1,4 +1,3 @@
-
 services:
   server:
     build: Backend/.
@@ -9,12 +8,15 @@ services:
       - local-network
     environment:
       - MONGO_URI=mongodb://mongo:27017/backlog 
+      - REDIS_HOST=redis-db
     depends_on:
       - mongo
+      - redis-db
 
   client:
     build: Frontend/.
     restart: unless-stopped
+    command: npm run dev -- --force --host
     ports:
       - "5173:5173"
     networks:
@@ -52,9 +54,56 @@ services:
     depends_on:
       - mongo  # Dipende dal servizio mongo
 
+  redis-db:
+    image: redis:alpine
+    command: redis-server --save "" --appendonly no
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - local-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  mempool-worker:
+    build: ./Backend
+    command: node services/realTimeCompliance/mempoolWorker.js
+    env_file:
+      - ./Backend/.env
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/backlog
+    networks:
+      - local-network  
+    depends_on:
+      redis-db:
+        condition: service_healthy 
+      coblockly-backend:
+        condition: service_started
+    volumes:
+      - ./metrics:/app/metrics
+
+  baseline-worker:
+    build: ./Backend
+    command: node services/realTimeCompliance/baselineWorker.js
+    env_file:
+      - ./Backend/.env
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/backlog
+    networks:
+      - local-network  
+    depends_on:
+      redis-db:
+        condition: service_healthy 
+      coblockly-backend:
+        condition: service_started
+    volumes:
+      - ./metrics:/app/metrics
+
 networks:
   local-network: {}
 
 volumes:
   mongo-data:
-
